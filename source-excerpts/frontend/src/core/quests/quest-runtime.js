@@ -1,0 +1,7 @@
+import { authoritativeQuests } from '../../data/generated/absolute-quests-v2000.js';
+const byId=new Map(authoritativeQuests.map(q=>[q.id,q]));
+export function questDefinition(id){return byId.get(id)||null;}
+export function ensureQuestState(state){state.questStorages||={};state.completedQuests||=[];return state;}
+export function questEligibility(state,quest){ensureQuestState(state);if(Number(state.profile?.level||1)<Number(quest.minimumLevel||1))return {ok:false,message:`Level ${quest.minimumLevel} necessário.`};for(const req of quest.requiredItems||[]){const total=Object.values(state.containers||{}).flatMap(c=>c.items||[]).filter(e=>e.itemId===`server_${req.itemId}`).reduce((s,e)=>s+Number(e.quantity||1),0);if(total<req.count)return {ok:false,message:`Item ${req.itemId} insuficiente.`};}for(const storage of quest.storageReads||[]){if(Number(state.questStorages[storage]??-1)>=1)return {ok:false,message:'Quest já concluída.'};}return {ok:true};}
+export function applyQuestStorage(state,quest){ensureQuestState(state);for(const s of quest.storageWrites||[])state.questStorages[s.id]=s.value;for(const id of quest.storageReads||[])if(state.questStorages[id]==null)state.questStorages[id]=1;if(!state.completedQuests.includes(quest.id))state.completedQuests.push(quest.id);return state;}
+export function questJournal(state){ensureQuestState(state);return authoritativeQuests.map(q=>({...q,completed:state.completedQuests.includes(q.id),available:Number(state.profile?.level||1)>=Number(q.minimumLevel||1)}));}

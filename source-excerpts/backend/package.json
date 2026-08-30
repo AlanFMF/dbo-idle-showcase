@@ -1,0 +1,17 @@
+{
+  "name": "dbo-idle-server",
+  "version": "21.26.4",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "db:test": "node scripts/test-database.js",
+    "email:test": "node scripts/test-email.js"
+  },
+  "dependencies": {
+    "pg": "^8.13.1",
+    "ws": "^8.18.0",
+    "nodemailer": "^9.0.5"
+  }
+}

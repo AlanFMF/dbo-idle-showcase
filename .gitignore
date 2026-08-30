@@ -1,17 +1,22 @@
-﻿# Credenciais e segredos
+# Credenciais e configuração privada
 .env
 .env.*
 !.env.example
+.npmrc
+.pypirc
+private-config/
+credentials*
+secrets*
 *.pem
 *.key
+*.crt
+*.cer
 *.p12
 *.pfx
 id_rsa*
 id_ed25519*
-credentials*
-secrets*
 
-# Bancos, usuários e arquivos privados
+# Bancos, usuários e dados operacionais
 *.sql
 *.dump
 *.backup
@@ -22,8 +27,9 @@ backup/
 uploads/
 logs/
 *.log
+*.pid
 
-# Dependências e arquivos temporários
+# Dependências, cobertura e arquivos temporários
 node_modules/
 coverage/
 dist/

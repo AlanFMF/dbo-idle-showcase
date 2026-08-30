@@ -1,0 +1,79 @@
+*{box-sizing:border-box}body{margin:0;background:#07101a;color:#dce7f1;font:12px Arial,sans-serif}button,input,select{font:inherit}header{height:72px;display:flex;align-items:center;justify-content:space-between;padding:10px 18px;background:#0e1c2a;border-bottom:1px solid #39516a}h1{margin:0;color:#ffe08a;font-size:20px}header p{margin:4px 0;color:#8fa3b6}.header-actions{display:flex;gap:8px}.header-actions button,.header-actions a,.file{padding:9px 12px;border:1px solid #4e6881;background:#15283a;color:white;border-radius:6px;text-decoration:none;cursor:pointer}.file input{display:none}main{height:calc(100vh - 72px);display:grid;grid-template-columns:250px minmax(0,1fr) 250px}.left,.right{overflow:auto;padding:12px;background:#0b1621}.left{border-right:1px solid #2c4053}.right{border-left:1px solid #2c4053}section{margin-bottom:14px}h2{font-size:12px;color:#f0ca66;text-transform:uppercase;letter-spacing:.8px}.tools{display:grid;grid-template-columns:1fr 1fr;gap:5px}.tools button,.left button{padding:7px;background:#142536;color:#dce7f1;border:1px solid #40586f;border-radius:5px}.tools button.active,.palette-item.active{border-color:#f1c94e;background:#382f18}label{display:grid;gap:4px;margin:7px 0;color:#9eb0c0}input,select{width:100%;padding:7px;background:#07111b;color:white;border:1px solid #3d5368;border-radius:4px}.two{display:grid;grid-template-columns:1fr 1fr;gap:6px}.palette-list{display:grid;grid-template-columns:1fr 1fr;gap:5px;max-height:380px;overflow:auto}.palette-item{min-height:80px;display:grid;place-items:center;background:#101e2c;color:white;border:1px solid #31495e;border-radius:5px}.palette-item img{width:32px;height:32px;image-rendering:pixelated}.palette-item span{font-size:10px}.palette-item small{color:#72879a}.workspace{min-width:0;margin:0;background:#050a0f}.workspace-toolbar{height:45px;display:flex;align-items:center;gap:8px;padding:7px 10px;background:#101b27;border-bottom:1px solid #26394c}.workspace-toolbar button{padding:6px 10px;background:#182a3b;color:#dce7f1;border:1px solid #455d73}.workspace-toolbar label{display:flex;align-items:center;gap:6px;margin-left:auto}.canvas-wrap{height:calc(100vh - 117px);overflow:auto;padding:30px;background:#101820}canvas{display:block;background:#222;image-rendering:pixelated;box-shadow:0 0 0 2px #52677b,0 10px 40px #000}.right article{padding:8px;margin:7px 0;background:#111f2d;border:1px solid #30485d;border-radius:6px}.right article strong,.right article span{display:block}.right article span{color:#8094a6}.right article label{display:flex;align-items:center}.right article input{width:60px}.right article button{background:#5d2020;color:#fff;border:1px solid #913b3b;padding:5px}@media(max-width:1000px){main{grid-template-columns:210px 1fr}.right{display:none}}
+.original-map-loader{
+  border-color:#78621e!important;
+  background:linear-gradient(#2d2817,#15130c)!important;
+}
+.original-map-loader button{
+  width:100%;
+  margin-top:8px;
+  padding:9px;
+  color:#241b05;
+  background:linear-gradient(#edc860,#b98d28);
+  border:1px outset #f6db86;
+  font-weight:bold;
+}
+.original-map-loader small{
+  display:block;
+  margin-top:8px;
+  color:#a99d79;
+  line-height:1.4;
+}
+.world-coordinates{
+  display:grid;
+  gap:3px;
+  margin-top:10px;
+  padding:8px;
+  color:#b8c7d4;
+  background:#08101a;
+  border:1px solid #2c3c4b;
+  font-size:10px;
+}
+.canvas-wrap{
+  background:#020407!important;
+}
+
+/* V20.28 — navegação direta por coordenadas mundiais */
+.coordinate-jump{
+  padding:10px;
+  border:1px solid #3f617e;
+  border-radius:6px;
+  background:#0d1b28;
+}
+.coordinate-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr 72px;
+  gap:6px;
+}
+.coordinate-jump button{
+  width:100%;
+  margin-top:5px;
+  padding:9px;
+  color:#07101a;
+  background:#f0ca66;
+  border:1px solid #ffe59a;
+  font-weight:bold;
+  cursor:pointer;
+}
+.coordinate-jump small{
+  display:block;
+  margin-top:7px;
+  color:#8fa3b6;
+  line-height:1.35;
+}
+.coordinate-jump small[data-state="loading"]{color:#f0ca66}
+.coordinate-jump small[data-state="ok"]{color:#86d49b}
+.coordinate-jump small[data-state="error"]{color:#ff8e8e}
+.cursor-world{
+  min-width:215px;
+  padding:5px 8px;
+  border:1px solid #324b60;
+  border-radius:4px;
+  background:#08121c;
+  color:#f0ca66;
+  text-align:center;
+}
+@media(max-width:720px){
+  .coordinate-grid{grid-template-columns:1fr 1fr}
+  .coordinate-grid label:last-child{grid-column:1/-1}
+  .cursor-world{display:none}
+}

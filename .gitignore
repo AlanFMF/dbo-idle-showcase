@@ -1,0 +1,55 @@
+﻿# Credenciais e segredos
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa*
+id_ed25519*
+credentials*
+secrets*
+
+# Bancos, usuários e arquivos privados
+*.sql
+*.dump
+*.backup
+*.db
+*.sqlite*
+backups/
+backup/
+uploads/
+logs/
+*.log
+
+# Dependências e arquivos temporários
+node_modules/
+coverage/
+dist/
+tmp/
+temp/
+.cache/
+
+# Pacotes e arquivos brutos
+*.zip
+*.rar
+*.7z
+*.tar
+*.tar.gz
+*.dat
+*.spr
+
+# Conteúdo gerado e cópias antigas
+assets/generated/
+**/assets/generated/
+generated/
+**/generated/
+play-quebrado-*/
+_backup-*/
+
+# Sistema e editores
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

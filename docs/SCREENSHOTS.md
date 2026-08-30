@@ -1,10 +1,8 @@
 # Screenshots e vídeo de demonstração
 
-Antes do encerramento definitivo do servidor, registre a experiência sem mostrar dados privados.
+As mídias abaixo foram registradas em uma conta exclusiva de demonstração antes do encerramento do ambiente de produção. Nenhuma credencial, dado de pagamento, conversa ou informação de jogador real é exibida.
 
-## Capturas recomendadas
-
-Salve em `docs/media/` usando estes nomes:
+## Capturas disponíveis
 
 1. `01-home.webp` — página inicial;
 2. `02-character.webp` — personagem e interface principal;
@@ -13,26 +11,27 @@ Salve em `docs/media/` usando estes nomes:
 5. `05-market.webp` — mercado entre jogadores;
 6. `06-guild.webp` — guilda ou party;
 7. `07-progression.webp` — passe, quests ou bestiário;
-8. `08-wiki.webp` — Wiki do jogo.
+8. `08-wiki.webp` — Wiki do jogo;
+9. `09-bestiary.webp` — bestiário e progressão de atributos.
 
-## Regras de privacidade
+## Cuidados de privacidade adotados
 
-- ocultar e-mails, senhas, códigos e identificadores de sessão;
-- evitar contas ou conversas de jogadores reais;
-- não mostrar painel administrativo, banco ou terminal;
-- revisar notificações do Windows antes de gravar;
-- usar uma conta de demonstração sempre que possível.
+- e-mails, senhas, códigos e identificadores de sessão não são exibidos;
+- foi utilizada uma conta criada exclusivamente para demonstração;
+- conversas e dados de jogadores reais foram evitados;
+- painel administrativo, banco, terminal e dados de pagamento não aparecem.
 
-## Vídeo
+## Vídeo de demonstração
 
-Um vídeo de 2 a 4 minutos é suficiente. A sequência recomendada é:
+O arquivo [`DBO-IDLE-demonstracao-tecnica.mp4`](media/DBO-IDLE-demonstracao-tecnica.mp4) apresenta uma demonstração Full HD de 1 minuto e 5 segundos, sem áudio, com a seguinte sequência:
 
 1. página inicial;
-2. login com dados ocultos;
-3. personagem e progressão;
-4. hunt e transformação;
-5. market, guilda ou party;
-6. Wiki;
-7. encerramento com stack e responsabilidades.
+2. personagem e mapa;
+3. combate em hunt;
+4. transformações;
+5. market e guilda;
+6. passe de batalha e bestiário;
+7. Wiki;
+8. encerramento com stack e autoria.
 
-Depois de hospedado, adicione o link do vídeo ao `README.md`.
+O vídeo e as imagens estão vinculados no `README.md` principal.

@@ -13,6 +13,24 @@ O projeto reuniu frontend em JavaScript, backend Node.js, comunicação em tempo
 | Módulos frontend demonstrados | 41 |
 | Módulos JavaScript do backend | 13 |
 
+## Demonstração visual
+
+[![Assistir à demonstração técnica do DBO IDLE](docs/media/01-home.webp)](docs/media/DBO-IDLE-demonstracao-tecnica.mp4)
+
+▶️ **[Assistir ao vídeo de demonstração](docs/media/DBO-IDLE-demonstracao-tecnica.mp4)** — 1 minuto e 5 segundos, Full HD, sem áudio.
+
+| Gameplay e hunts | Transformações |
+|---|---|
+| ![Combate em uma hunt](docs/media/03-hunt.webp) | ![Progressão de transformações](docs/media/04-transformation.webp) |
+
+| Mercado global | Bestiário |
+|---|---|
+| ![Mercado entre jogadores](docs/media/05-market.webp) | ![Bestiário e progressão permanente](docs/media/09-bestiary.webp) |
+
+| Guildas | Wiki integrada |
+|---|---|
+| ![Sistema de guildas](docs/media/06-guild.webp) | ![Wiki do jogo](docs/media/08-wiki.webp) |
+
 ## Minha atuação
 
 Atuei no planejamento, desenvolvimento, integração, implantação e evolução contínua do produto, incluindo:

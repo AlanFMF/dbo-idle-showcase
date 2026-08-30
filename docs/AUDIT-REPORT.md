@@ -43,6 +43,13 @@ Nenhum token de produção, chave privada ou arquivo `.env` foi localizado nos d
 
 Foram selecionados 56 arquivos de código de produção, totalizando 22.412 linhas em HTML, CSS e JavaScript. O recorte cobre motores do frontend, API, persistência, pagamentos, PvP, autoridade do servidor e ferramentas de desenvolvimento.
 
+Além do código, dois materiais operacionais entraram na versão pública:
+
+- [`SCHEMA.sql`](SCHEMA.sql) — o `pg_dump` do banco de produção: 20 tabelas, 223 colunas, 33 chaves estrangeiras, 42 constraints CHECK e 25 índices, **sem nenhum registro de jogador** (zero `INSERT`, zero `COPY`);
+- [`METRICS.md`](METRICS.md) — métricas medidas na VPS com o sistema no ar, extraídas do processo, dos logs do Nginx e de contagens agregadas do banco, sem identificadores de contas, e-mails ou endereços IP.
+
+As capturas e vídeos publicados foram revisados segundo os critérios de [`SCREENSHOTS.md`](SCREENSHOTS.md).
+
 ## Limitação
 
 A busca de segredos combina regras heurísticas e revisão direcionada; nenhuma varredura garante risco zero. Antes de tornar o repositório público, todas as credenciais do ambiente encerrado devem ser revogadas ou rotacionadas e o histórico Git deve ser verificado novamente.
